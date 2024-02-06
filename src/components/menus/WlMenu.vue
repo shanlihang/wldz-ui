@@ -3,17 +3,14 @@
   <div class="container">
     <div class="siteInfo"></div>
     <div class="menus">
-        <WlMenuItem></WlMenuItem>
-        <WlMenuItem></WlMenuItem>
-        <WlMenuItem></WlMenuItem>
-        <WlMenuItem></WlMenuItem>
+        <slot></slot>
     </div>
     <div class="accountInfo"></div>
   </div>
 </template>
 
 <script setup lang="ts">
-import WlMenuItem from './WlMenuItem.vue'
+
 </script>
 
 <style scoped>
@@ -21,6 +18,7 @@ import WlMenuItem from './WlMenuItem.vue'
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
+    position: relative;
 }
 .menus{
     width: 100%;

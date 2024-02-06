@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import WlMenu from '../components/menus/WlMenu.vue'
-import aContext from './a.svg'
-import WlSvg from '../components/base/WlSvg.vue'
+import WlMenuItem from '../components/menus/WlMenuItem.vue'
 </script>
 
 <template>
-    <div><WlMenu /></div>
+    <div>
+        <WlMenu>
+            <WlMenuItem></WlMenuItem>
+            <WlMenuItem></WlMenuItem>
+            <WlMenuItem></WlMenuItem>
+            <WlMenuItem></WlMenuItem>
+        </WlMenu>
+    </div>
 </template>
 
 <style scoped>

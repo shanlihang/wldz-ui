@@ -19,6 +19,7 @@ const props = defineProps({
 
 <style scoped>
 .container{
+    height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
