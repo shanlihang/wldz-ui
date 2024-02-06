@@ -1,11 +1,17 @@
 <script setup lang="ts">
-import WlAside from '../components/containers/WlAside.vue'
+import WlButton from '../components/base/WlButton.vue'
 </script>
 
 <template>
-    <div><WlAside></WlAside></div>
+    <div><WlButton></WlButton></div>
 </template>
 
 <style scoped>
-
+div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 </style>
