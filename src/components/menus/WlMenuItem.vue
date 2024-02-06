@@ -1,8 +1,9 @@
 <!-- 菜单项组件 -->
 <template>
   <div class="container">
-    <img :src="props.src" style="width:50px;height:50px;">
-    <span>{{props.value}}</span>
+    <div class="section">
+      <span>{{props.value}}</span>
+    </div>
   </div>
 </template>
 
@@ -12,24 +13,28 @@ const props = defineProps({
     value:{
         type:String,
         default:'菜单项'
-    },
-    src:{
-      type:String,
-      default:'./cancel.png'
     }
 })
 </script>
 
 <style scoped>
 .container{
-    width: 100%;
-    height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: #fff;
+    border-radius: 10px;
 }
-.container:hover{
-    background-color: aqua;
+.container .section{
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+.section:hover{
+    background-color: rgb(32, 33, 35);
     color: #fff;
 }
 </style>
