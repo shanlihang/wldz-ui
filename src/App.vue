@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import TestView from './views/TestView.vue'
 </script>
 
 <template>
-  <div>
-    <RouterLink to="/test">test</RouterLink>
-  </div>
-  <RouterView />
+<div><TestView /></div>
 </template>
 
 <style scoped>

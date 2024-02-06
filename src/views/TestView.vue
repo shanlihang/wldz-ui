@@ -1,9 +1,9 @@
 <script setup lang="ts">
-
+import WlHeader from '../components/containers/WlHeader.vue'
 </script>
 
 <template>
-    <div>123456789</div>
+    <div><WlHeader height="100"></WlHeader></div>
 </template>
 
 <style scoped>
