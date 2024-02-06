@@ -1,7 +1,7 @@
-<!-- 头部容器组件 -->
+<!-- 侧边栏容器组件 -->
 <template>
   <div class="container" :style="style">
-    <slot>header</slot>
+    <slot>侧边栏容器</slot>
   </div>
 </template>
 
@@ -10,27 +10,24 @@ import {reactive, ref,defineProps} from 'vue'
 const props = defineProps({
     width:{
       type:String,
-      default:'100'
+      default:'300'
     },
     height:{
         type:String,
-        default:'100'
+        default:'800'
     }
 })
 const style = reactive({
-  'width':props.width + '%',
+  'width':props.width + 'px',
   'height':props.height + 'px'
 })
-
-
 </script>
+
 
 <style scoped>
 .container{
-    width: 100%;
+    width: 300px;
+    height: 100vh;
     background-color: rgb(236, 245, 255);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 </style>

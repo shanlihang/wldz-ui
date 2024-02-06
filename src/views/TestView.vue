@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import WlHeader from '../components/containers/WlHeader.vue'
+import WlAside from '../components/containers/WlAside.vue'
 </script>
 
 <template>
-    <div><WlHeader height="100"></WlHeader></div>
+    <div><WlAside></WlAside></div>
 </template>
 
 <style scoped>
