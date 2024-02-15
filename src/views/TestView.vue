@@ -1,22 +1,20 @@
 <script setup lang="ts">
-import WlMenu from '../components/menus/WlMenu.vue'
-import WlMenuItem from '../components/menus/WlMenuItem.vue'
+import WlRadioGroup from '../components/form/WlRadioGroup.vue'
+import WlRadioButton from '../components/form/WlRadioButton.vue'
 </script>
 
 <template>
     <div>
-        <WlMenu>
-            <WlMenuItem></WlMenuItem>
-            <WlMenuItem></WlMenuItem>
-            <WlMenuItem></WlMenuItem>
-            <WlMenuItem></WlMenuItem>
-        </WlMenu>
+        <WlRadioGroup>
+            <WlRadioButton></WlRadioButton>
+        </WlRadioGroup>
     </div>
+    
 </template>
 
 <style scoped>
 div{
-    width: 250px;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
