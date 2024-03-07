@@ -1,11 +1,11 @@
 <!-- 全屏页面组件 -->
 <template>
-  <div class="colorSelect" :style="{'background-color':bkgColor}">
+  <div class="colorSelect" :style="{'background':bkgColor}">
     <div class="colorInfo">
         当前色值：<span style="border-bottom: 3px solid #000 ;">{{ bkgColor }}</span>
     </div>
     <div class="colorDivs">
-        <div class="colorDiv" @click="changeBkg(item.code)" v-for="item in colorList" :key="item.id" :style="{'background-color':item.code}">
+        <div class="colorDiv" @click="changeBkg(item.code)" v-for="item in colorList" :key="item.id" :style="{'background':item.code}">
             <p>{{ item.name }}</p>
         </div>
     </div>
@@ -24,13 +24,14 @@ interface ColorList{
 
 const bkgColor = ref<string>('#fff')
 
-const colorList = reactive<Array[ColorList]>([
+const colorList = reactive<Array<ColorList>>([
     {id:1,name:'麦苗绿',code:'#55bb8a'},
     {id:2,name:'香叶红',code:'#f07c82'},
     {id:3,name:'茶花红',code:'#ee3f4d'},
     {id:4,name:'暗玉紫',code:'#5c2223'},
     {id:5,name:'葡萄紫',code:'#4c1f24'},
     {id:6,name:'苍蝇灰',code:'#36282b'},
+    {id:7,name:'夜色淡入淡出',code:'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)'},
     
 ])
 
