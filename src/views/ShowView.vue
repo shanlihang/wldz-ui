@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import SvgResource from '../components/base/SvgResource.vue'
+import WlTag from '../components/datashow/WlTag.vue'
 </script>
 
 <template>
     <div class="showView">
-        <SvgResource src="/src/components/base/nginx.svg"></SvgResource>
+        <WlTag value="123"></WlTag>
     </div>
     
 </template>
