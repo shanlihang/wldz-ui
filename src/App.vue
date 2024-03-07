@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import TestView from './views/TestView.vue'
 </script>
 
 <template>
-<div><TestView /></div>
+    <div class="root">
+        123456
+    </div>
 </template>
 
 <style scoped>
+.root{
+    width: 100%;
+    height: 100vh;
+    background-color: #55bb8a;
+}
 </style>

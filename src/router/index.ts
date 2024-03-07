@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TestView from '../views/TestView.vue'
+import ShowView from '../views/ShowView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'test',
-      component: TestView
+      name: 'show',
+      component: ShowView
     }
   ]
 })

@@ -1,13 +1,8 @@
 <script setup lang="ts">
-import WlRadioGroup from '../components/form/WlRadioGroup.vue'
-import WlRadioButton from '../components/form/WlRadioButton.vue'
 </script>
 
 <template>
     <div>
-        <WlRadioGroup>
-            <WlRadioButton></WlRadioButton>
-        </WlRadioGroup>
     </div>
     
 </template>

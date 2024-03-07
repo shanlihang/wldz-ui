@@ -12,6 +12,6 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-color: rgb(236, 245, 255);
+    background-color: rgb(14, 93, 184);
 }
 </style>
