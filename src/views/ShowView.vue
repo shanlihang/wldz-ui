@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import colorSelect from '../components/base/ColorSelect.vue'
+import SvgResource from '../components/base/SvgResource.vue'
 </script>
 
 <template>
-    <div>
-        <colorSelect></colorSelect>
+    <div class="showView">
+        <SvgResource src="/src/components/base/nginx.svg"></SvgResource>
     </div>
     
 </template>
 
 <style scoped>
-div{
+.showView{
     width: 100%;
     height: 100%;
     display: flex;
