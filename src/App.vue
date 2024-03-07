@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import ShowView from './views/ShowView.vue'
 </script>
 
 <template>
     <div class="root">
-        123456
+        <ShowView></ShowView>
     </div>
 </template>
 
@@ -11,6 +12,5 @@
 .root{
     width: 100%;
     height: 100vh;
-    background-color: #55bb8a;
 }
 </style>
