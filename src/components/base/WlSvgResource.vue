@@ -22,7 +22,4 @@ const props = withDefaults(defineProps<SvgSource>(),{
 </template>
 
 <style scoped>
-.svgSource{
-    background-color: aqua;
-}
 </style>
