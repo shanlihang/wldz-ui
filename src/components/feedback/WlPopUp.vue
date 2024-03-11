@@ -2,12 +2,19 @@
     
  -->
  <script setup lang="ts">
+import WlSvgResource from '../base/WlSvgResource.vue'
 interface PopUp{
-    isOpen:boolean
+    isOpen:boolean,
+    title?:string,
+    width?:number,
+    height?:number,
 }
 
  const props = withDefaults(defineProps<PopUp>(),{
-    isOpen:false
+    isOpen:false,
+    title:'弹窗标题',
+    width:500,
+    height:300,
  })
 
  
@@ -15,7 +22,12 @@ interface PopUp{
  
  <template>
      <div class="dialog" v-show="props.isOpen">
-        <div class="container"></div>
+        <div class="container" :style="{width:props.width+'px',height:props.height+'px'}">
+         <div class="title">
+            <p>{{ props.title }}</p>
+            <WlSvgResource src="/src/assets/close.svg" width="25" height="25" @click="close"/>
+         </div>
+        </div>
      </div>
  </template>
  
@@ -31,6 +43,17 @@ interface PopUp{
  .dialog .container{
     width: 500px;
     height: 350px;
+    border-radius: 6px;
     background-color: aliceblue;
+ }
+ .dialog .container .title{
+   height: 40px;
+   font-size: 18px;
+   padding: 0 20px;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 2px solid rgba(0, 0, 0, .4);
  }
  </style>
