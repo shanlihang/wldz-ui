@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import WlPopUp from '../components/feedback/WlPopUp.vue'
+import WlEmpty from '../components/datashow/WlEmpty.vue'
 </script>
 
 <template>
     <div class="showView">
-        <WlPopUp :is-open="true"></WlPopUp>
+        <WlEmpty></WlEmpty>
     </div>
     
 </template>
