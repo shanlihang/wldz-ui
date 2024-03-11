@@ -6,13 +6,12 @@
     size    字体大小，默认为15px
  -->
 <script setup lang="ts">
-import { onMounted,reactive,ref } from 'vue';
 interface Tag{
     color:string,
     radius:number,
     bkg:string,
     value:string | number | boolean,
-    size:string
+    size:number
 }
 const props = withDefaults(defineProps<Tag>(),{
     color:'#000',

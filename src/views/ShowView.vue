@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import WlTag from '../components/datashow/WlTag.vue'
+import WlPopUp from '../components/feedback/WlPopUp.vue'
 </script>
 
 <template>
     <div class="showView">
-        <WlTag value="123"></WlTag>
+        <WlPopUp :is-open="true"></WlPopUp>
     </div>
     
 </template>
