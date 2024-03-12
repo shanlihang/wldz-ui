@@ -17,6 +17,10 @@ interface PopUp{
     height:300,
  })
 
+ const close = () => {
+   console.log(13);
+   
+ }
  
  </script>
  
