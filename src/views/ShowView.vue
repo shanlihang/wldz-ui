@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import WlFillScreen from '../components/containers/WlFillScreen.vue'
+import WlMenu from '../components/navigation/WlMenu.vue'
 </script>
 
 <template>
     <div class="showView">
-        <div style="width: 500px;height: 300px;">
-            <WlFillScreen></WlFillScreen>
-        </div>
-        
+        <WlMenu></WlMenu>
     </div>
     
 </template>
