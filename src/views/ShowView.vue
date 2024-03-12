@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import WlEmpty from '../components/datashow/WlEmpty.vue'
+import WlFillScreen from '../components/containers/WlFillScreen.vue'
 </script>
 
 <template>
     <div class="showView">
-        <WlEmpty></WlEmpty>
+        <div style="width: 500px;height: 300px;">
+            <WlFillScreen></WlFillScreen>
+        </div>
+        
     </div>
     
 </template>
