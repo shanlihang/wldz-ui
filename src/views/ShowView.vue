@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import WlMenu from '../components/navigation/WlMenu.vue'
+import WlDrawer from '../components/feedback/WlDrawer.vue'
 </script>
 
 <template>
     <div class="showView">
-        <WlMenu></WlMenu>
+        <WlDrawer/>
     </div>
     
 </template>
@@ -13,8 +13,5 @@ import WlMenu from '../components/navigation/WlMenu.vue'
 .showView{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 </style>
