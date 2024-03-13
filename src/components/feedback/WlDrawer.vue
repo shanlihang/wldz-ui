@@ -4,6 +4,10 @@ import {ref,reactive,onMounted} from 'vue'
 interface DrawerOptions{
     width?:number|string,
     height?:number|string,
+    top?:0,
+    bottom?:0,
+    left?:0,
+    right?:0
 }
 
 const props = withDefaults(defineProps<DrawerOptions>(),{
@@ -69,6 +73,8 @@ onMounted(() => {
     height: 100%;
     position: relative;
     background-color: rgba(0, 0, 0, .4);
+    position: relative;
+    z-index: 1;
 }
 .drawer .inner{
     background-color: #fff;
