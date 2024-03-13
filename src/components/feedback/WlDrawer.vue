@@ -58,7 +58,7 @@ onMounted(() => {
         <div class="inner" :style="style">
             <div class="title">
                 <p>抽屉信息</p>
-                <WlSvgResource src="/src/assets/close.svg" width="25" height="25" @click="closeDrawer" />
+                <WlSvgResource src="/src/assets/imgs/icon/close.svg" width="25" height="25" @click="closeDrawer" />
             </div>
             <div class="content">
                 <slot>抽屉内容</slot>

@@ -29,7 +29,7 @@ interface PopUp{
         <div class="container" :style="{width:props.width+'px',height:props.height+'px'}">
          <div class="title">
             <p>{{ props.title }}</p>
-            <WlSvgResource src="/src/assets/close.svg" width="25" height="25" @click="close"/>
+            <WlSvgResource src="/src/assets/imgs/icon/close.svg" width="25" height="25" @click="close"/>
          </div>
         </div>
      </div>
