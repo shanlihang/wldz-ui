@@ -1,10 +1,17 @@
 <script setup lang="ts">
-import WlDrawer from '../components/feedback/WlDrawer.vue'
+import WlMenu from '../components/navigation/WlMenu.vue'
 </script>
 
 <template>
     <div class="showView">
-        <WlDrawer/>
+        <div class="menu">
+            <WlMenu />
+        </div>
+        <div class="test">
+
+            
+        </div>
+        
     </div>
     
 </template>
@@ -13,5 +20,15 @@ import WlDrawer from '../components/feedback/WlDrawer.vue'
 .showView{
     width: 100%;
     height: 100%;
+    display: flex;
+}
+.menu{
+    height: 100%;
+    overflow: hidden;
+}
+.test{
+    height: 100%;
+    flex: 1 0 auto;
+    background-color: aqua;
 }
 </style>
