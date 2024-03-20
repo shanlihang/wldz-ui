@@ -5,12 +5,12 @@ import WlSvgResource from '../base/WlSvgResource.vue'
  <template>
      <div class="empty">
          <div class="content">
-
-            <WlSvgResource src="/src/assets/empty.svg" width="300" height="200"/>
+            <WlSvgResource src="/src/assets/icon/empty.svg" width="200" height="150"/>
+            <div class="font">
+               暂无数据
+            </div>
          </div>
-         <div class="font">
-            暂无数据
-         </div>
+         
      </div>
  </template>
  
@@ -25,19 +25,16 @@ import WlSvgResource from '../base/WlSvgResource.vue'
     
  }
  .empty .content{
-    width: 50%;
-    height: 45%;
+    width: 300px;
+    height: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items:end;
+    align-items:center;
  }
- .empty .font{
-    width: 50%;
-    height: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #a5a4a4;
+ .font{
+   color:rgba(0, 0,0,.2)
  }
+ 
 
  </style>

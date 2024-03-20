@@ -41,4 +41,8 @@ const props = withDefaults(defineProps<Card>(),{
     font-weight: bold;
     margin-left: 20px;
 }
+.card .down{
+    width: 100%;
+    height: 70%;
+}
 </style>

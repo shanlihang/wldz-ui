@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import WlMenu from '../components/navigation/WlMenu.vue'
-import WlCard from '../components/datashow/WlCard.vue'
+import WlEmpty from '../components/datashow/WlEmpty.vue'
 </script>
 
 <template>
@@ -9,8 +9,8 @@ import WlCard from '../components/datashow/WlCard.vue'
             <WlMenu />
         </div>
         <div class="test">
-            <div class="a" style="width: 500px;height: 200px;">
-                <WlCard />
+            <div class="a" style="width: 500px;height: 500px;background-color: brown;">
+                <WlEmpty></WlEmpty>
             </div>
         </div>
         
