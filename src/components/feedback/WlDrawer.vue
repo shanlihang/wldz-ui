@@ -1,18 +1,24 @@
 <script setup lang="ts">
 import WlSvgResource from '../base/WlSvgResource.vue'
-import {ref,reactive,onMounted} from 'vue'
+import {ref,reactive,onMounted,toRefs} from 'vue'
 interface DrawerOptions{
     width?:number|string,
     height?:number|string,
-    top?:0,
-    bottom?:0,
-    left?:0,
-    right?:0
+    top?:number,
+    bottom?:number,
+    left?:number,
+    right?:number,
+    showDrawer?:boolean
 }
 
 const props = withDefaults(defineProps<DrawerOptions>(),{
     width:'100%',
-    height:'500px'
+    height:'500px',
+    top:0,
+    bottom:0,
+    left:0,
+    right:0,
+    showDrawer:false
 })
 
 const top = reactive<DrawerOptions>({
@@ -41,10 +47,9 @@ const right = reactive<DrawerOptions>({
 
 const style = ref()
 
-
 //关闭抽屉事件
 const closeDrawer = () => {
-
+    
 }
 
 onMounted(() => {
@@ -54,11 +59,11 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="drawer">
+    <div class="drawer" v-if="props.showDrawer">
         <div class="inner" :style="style">
             <div class="title">
                 <p>抽屉信息</p>
-                <WlSvgResource src="/src/assets/imgs/icon/close.svg" width="25" height="25" @click="closeDrawer" />
+                <WlSvgResource src="/src/assets/icon/close.svg" width="25" height="25" @click="closeDrawer" />
             </div>
             <div class="content">
                 <slot>抽屉内容</slot>
@@ -71,9 +76,10 @@ onMounted(() => {
 .drawer{
     width: 100%;
     height: 100%;
-    position: relative;
     background-color: rgba(0, 0, 0, .4);
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
     z-index: 1;
 }
 .drawer .inner{

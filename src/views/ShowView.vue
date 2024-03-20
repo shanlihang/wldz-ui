@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import WlMenu from '../components/navigation/WlMenu.vue'
-import WlTag from '../components/datashow/WlTag.vue'
+import WlDrawer from '../components/feedback/WlDrawer.vue'
+
+import {ref} from 'vue'
+
+const a = ref(false)
 </script>
 
 <template>
     <div class="showView">
-        <div class="menu">
-            <WlMenu />
-        </div>
-        <div class="test">
-            <WlTag />
-        </div>
+        <button @click="a=!a">打开</button>
+        <WlDrawer :showDrawer="a" />
         
     </div>
     
@@ -20,7 +19,7 @@ import WlTag from '../components/datashow/WlTag.vue'
 .showView{
     width: 100%;
     height: 100%;
-    display: flex;
+    /* display: flex; */
 }
 .menu{
     height: 100%;
