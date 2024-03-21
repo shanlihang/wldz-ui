@@ -17,7 +17,7 @@ const props = withDefaults(defineProps<WlInput>(),{
 </script>
 
 <template>
-    <div class="wl-input">
+    <div class="wl-textarea">
         <textarea
             :placeholder="props.placeholder"
             :disabled="props.disabled"
@@ -31,21 +31,21 @@ const props = withDefaults(defineProps<WlInput>(),{
 </template>
 
 <style scoped>
-.wl-input{
+.wl-textarea{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.wl-input textarea{
+.wl-textarea textarea{
     border-radius: 6px;
     border: 1px solid #E0E0E0;
 	box-shadow:none;
 	outline: none;
     text-indent: 1rem;
 }
-.wl-input textarea:focus{
+.wl-textarea textarea:focus{
     border: 1px solid #00a0fd;
 }
 </style>
