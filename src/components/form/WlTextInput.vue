@@ -2,7 +2,6 @@
 
 interface WlInput{
     id?:string,
-    label?:string,
     placeholder?:string,
     width?:string,
     height?:string,
@@ -14,7 +13,6 @@ const props = withDefaults(defineProps<WlInput>(),{
     width:'100%',
     height:'30px',
     placeholder:'请输入内容',
-    label:'姓名',
     disabled:false
 })
 
@@ -22,9 +20,6 @@ const props = withDefaults(defineProps<WlInput>(),{
 
 <template>
     <div class="wl-input">
-        <div class="label">
-            <label :id="props.id">{{ props.label }}</label>
-        </div>
         <div class="input">
             <input
                 type="text" 
@@ -46,16 +41,14 @@ const props = withDefaults(defineProps<WlInput>(),{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
-.label{
-    margin-right: 20px;
-}
+
 .input{
+    width: 100%;
     display: flex;
-    flex: 0.75 0 auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 .input input{
     border-radius: 6px;
