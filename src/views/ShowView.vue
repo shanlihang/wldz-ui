@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WlTextArea from '../components/form/WlTextArea.vue'
+import WlRadio from '../components/form/WlRadio.vue'
 
 
 </script>
@@ -7,7 +7,7 @@ import WlTextArea from '../components/form/WlTextArea.vue'
 <template>
     <div class="showView">
         <div style="width: 300px;height: 200px;background-color: aqua;">
-            <WlTextArea />
+            <WlRadio value="123" name="123" />
         </div>
         
     </div>
