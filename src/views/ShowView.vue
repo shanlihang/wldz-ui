@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import WlTextInput from '../components/form/WlTextInput.vue'
+import WlNumberInput from '../components/form/WlNumberInput.vue'
 
 
 </script>
 
 <template>
     <div class="showView">
-        <div style="width: 300px;height: 500px;background-color: aqua;">
-            <WlTextInput label=""></WlTextInput>
+        <div style="width: 300px;height: 200px;background-color: aqua;">
+            <WlNumberInput />
         </div>
         
     </div>
