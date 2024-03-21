@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import WlDrawer from '../components/feedback/WlDrawer.vue'
+import WlTextInput from '../components/form/WlTextInput.vue'
 
-import {ref} from 'vue'
 
-const a = ref(false)
 </script>
 
 <template>
     <div class="showView">
-        <button @click="a=!a">打开</button>
-        <WlDrawer :showDrawer="a" />
+        <div style="width: 300px;height: 500px;background-color: aqua;">
+            <WlTextInput label=""></WlTextInput>
+        </div>
         
     </div>
     
@@ -19,18 +18,9 @@ const a = ref(false)
 .showView{
     width: 100%;
     height: 100%;
-    /* display: flex; */
-}
-.menu{
-    height: 100%;
-    overflow: hidden;
-}
-.test{
-    height: 100%;
-    flex: 1 0 auto;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 </style>
