@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WlNumberInput from '../components/form/WlNumberInput.vue'
+import WlTextArea from '../components/form/WlTextArea.vue'
 
 
 </script>
@@ -7,7 +7,7 @@ import WlNumberInput from '../components/form/WlNumberInput.vue'
 <template>
     <div class="showView">
         <div style="width: 300px;height: 200px;background-color: aqua;">
-            <WlNumberInput />
+            <WlTextArea />
         </div>
         
     </div>
