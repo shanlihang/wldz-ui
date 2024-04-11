@@ -28,6 +28,8 @@ const props = withDefaults(defineProps<Card>(),{
     height: 100%;
     border-radius: 6px;
     background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 .card .up{
     width: 100%;

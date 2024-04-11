@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WlRadio from '../components/form/WlRadio.vue'
+import WlCard from '../components/datashow/WlCard.vue'
 
 
 </script>
@@ -7,7 +7,9 @@ import WlRadio from '../components/form/WlRadio.vue'
 <template>
     <div class="showView">
         <div style="width: 300px;height: 200px;background-color: aqua;">
-            <WlRadio value="123" name="123" />
+            <WlCard title="123">
+                <div style="width: 100%;height: 100%;"></div>
+            </WlCard>
         </div>
         
     </div>
@@ -21,6 +23,5 @@ import WlRadio from '../components/form/WlRadio.vue'
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 </style>
