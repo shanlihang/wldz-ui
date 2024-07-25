@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import ShowView from './views/ShowView.vue'
 </script>
 
 <template>
     <div class="root">
-        <ShowView></ShowView>
+        123
     </div>
 </template>
 
