@@ -1,9 +1,17 @@
 <script setup lang="ts">
+import { ref } from "vue";
+import WlDialog from "./components/feedback/wl-dialog.vue";
+const modal = ref(null)
+
+const open = () => {
+    modal.value.openModal()
+}
 </script>
 
 <template>
     <div class="root">
-        123
+        <button @click="open">打开弹窗</button>
+        <wl-dialog ref="modal"></wl-dialog>
     </div>
 </template>
 
