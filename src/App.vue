@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import WlDialog from "./components/feedback/wl-dialog.vue";
+import WlButton from "./components/base/wl-button.vue";
 const modal = ref(null)
 
 const open = () => {
@@ -11,7 +11,7 @@ const open = () => {
 <template>
     <div class="root">
         <button @click="open">打开弹窗</button>
-        <wl-dialog ref="modal"></wl-dialog>
+        <wl-button ref="modal"></wl-button>
     </div>
 </template>
 
