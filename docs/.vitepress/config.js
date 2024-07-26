@@ -7,8 +7,10 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: '组件', link: '/components' },
+      { text: '指南', link: '/guide' },
+      { text: '版本记录', link: '/version' },
     ],
 
     sidebar: [
@@ -23,6 +25,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/shanlihang' }
-    ]
+    ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2024-present wldz-slh'
+    }
   }
 })
