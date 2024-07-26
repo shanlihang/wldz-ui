@@ -12,7 +12,10 @@ hero:
       link: /guide
     - theme: alt
       text: 组件列表
-      link: /components
+      link: /base
+  image:
+    src: /logo.svg
+    alt: 网页的logo图标
 
 features:
   - title: 完备的功能和样式封装
