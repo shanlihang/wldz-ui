@@ -1,17 +1,12 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import WlButton from "./components/base/wl-button.vue";
-const modal = ref(null)
+import WlButton from "./components/base/WlButton.vue";
 
-const open = () => {
-    modal.value.openModal()
-}
+
 </script>
 
 <template>
     <div class="root">
-        <button @click="open">打开弹窗</button>
-        <wl-button ref="modal"></wl-button>
+        <wl-button></wl-button>
     </div>
 </template>
 
